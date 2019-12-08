@@ -7,5 +7,5 @@ This project allows you to search for restaurants in one of the 100 largest citi
 
 ## Code Structure
 ### Significant Data Processing Functions
-(1) *map_business* Function
+(1) *map_business* Function  
     This function takes a City class instance as input, and return a mapbox scatter plot. In this function, I loop the latitude, longitude and name of restaurants in the given city into three lists and use these lists to create a plotly map.  
