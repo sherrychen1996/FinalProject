@@ -17,4 +17,11 @@ This project allows you to search for restaurants in one of the 100 largest citi
 ## User Guide  
 ### How to Run the Program
 Step 1: Install the Required Packages  
-$ pip install -r requirements.txt
+```  
+$ pip install -r requirements.txt  
+```  
+Step 2: Run the app.py File  
+```  
+$ python app.py  
+```  
+Step 3: Copy the Url ( http://127.0.0.1:5000/ ) and Paste it in a Browser  
