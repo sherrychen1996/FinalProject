@@ -1,4 +1,3 @@
-# FinalProject
-SI507-Final-Project
+# SI507 Final Project
 
 ## Data Sources
