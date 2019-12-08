@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css"
+  href="{{ url_for('static', filename='style.css') }}"/>
+<body>
+    <h1> {{ ResName }} </h1>
+    <center><img src="{{ ImgUrl }}" width=400 /></center>
+    <h2> Compare Ratings and Prices </h2>
+    <form action="/res/{{ Bsn }}" method="POST">
+      What kind of chart do you want:<br/>
+      <input type="radio" name="chart" value="rating"/>  Bar Chart -- Rating and Average Rating <br/>
+      <input type="radio" name="chart" value="price"/> Bar Chart -- Price and Average Price <br/>
+      <input type="radio" name="chart" value="time"/> Table -- Open Time <br/>
+      <input type="radio" name="chart" value="review"/> Table -- Customer Reviews <br/>
+      </br>
+      <input type="submit" name="update" value="Update"/>
+      </br>
+      </br>
+    </form>
+    <div><center>{{ Chart }}</center></div>
+    <p> <a href="/{{CityName}}"> Return to City Page </a> </p>
+    <p> <a href="/"> Return to Homepage </a> </p>
+</body>
+</html>

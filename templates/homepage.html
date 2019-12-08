@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css"
+  href="{{ url_for('static', filename='style.css') }}"/>
+<body>
+    <h1>Largest 100 Cities in the US</h1>
+    <h2>City Distribution</h2>
+    <div><center>{{ all_city_map }}</center></div>
+    <h2>City List</h2>
+    <form action="/" method="POST">
+        Sort By:<br/>
+        <input type="radio" name="sortby" value="City Name"/> City Name <br/>
+        <input type="radio" name="sortby" value="State Name"/> State Name <br/>
+        <br/>
+        Sort Order:<br/>
+        <input type="radio" name="sortorder" value="AtoZ"/> A to Z <br/>
+        <input type="radio" name="sortorder" value="ZtoA"/> Z to A <br/>
+        <br/>
+        <input type="submit" name="update" value="Update"/>
+        <br/>
+        <br/>
+    </form>
+    <center>
+    <table border=1>
+    {% for i in len_list %}
+        <tr>
+        {% for j in range(4) %}
+            <td> <a href="/{{list[4*i+j].cityName}}"> {{list[4*i+j].__str__()}} </a> </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+    </center>
+</body>
+</html>

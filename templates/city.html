@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css"
+  href="{{ url_for('static', filename='style.css') }}"/>
+<body>
+    <h1>Restaurants in {{CityName}}</h1>
+    <h2>Restaurant Distribution</h2>
+    <div><center>{{ RestaurantMap }}</center></div>
+    <h2>Percentage of Different Ratings/Prices</h2>
+    <form action="/{{ City }}" method="POST">
+        What to show:<br/>
+        <input type="radio" name="show" value="rating"/> Ratings <br/>
+        <input type="radio" name="show" value="price"/> Prices <br/>
+        <br/>
+        <input type="submit" name="update" value="Update"/>
+        <br/>
+        <br/>
+    </form>
+        <div><center>{{ PieChart }}</center></div>
+    <h2>Restaurant List</h2>
+        <form action="/{{ City }}" method="POST">
+            Sort By:<br/>
+            <input type="radio" name="sortby" value=0/> Alphabetic <br/>
+            <input type="radio" name="sortby" value=1/> Rating <br/>
+            <input type="radio" name="sortby" value=2/> Price <br/>
+            <br/>
+            Sort Order:<br/>
+            <input type="radio" name="sortorder" value=0/> A to Z/Low to High <br/>
+            <input type="radio" name="sortorder" value=1/> Z to A/High to Low <br/>
+            <br/>
+            <input type="submit" name="update" value="Update"/>
+            <br/>
+            <br/>
+        </form>
+        <ul>
+        {% for i in BsnDict %}
+            <li> <a href="/res/{{i}}"> {{ BsnDict[i] }} </a> </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <p> <a href="/"> Return to Homepage </a> </p>
+</body>
+</html>
