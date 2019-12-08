@@ -1,0 +1,25 @@
+/* style.css */
+h1 {
+	color: midnightblue;
+	font-size: 40pt;
+	}
+h2 {
+	color: navy;
+	font-size: 28pt;
+	}
+div {
+	color: navy;
+	font-size: 28pt;
+	}
+a {
+	color: purple;
+	font-size: 16pt;
+	}
+body {
+	background-color: cornsilk;
+	font-family: "Times New Roman";
+	}
+p {
+	color: black;
+	font-size: 13pt;
+	}
