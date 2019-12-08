@@ -16,5 +16,5 @@ This project allows you to search for restaurants in one of the 100 largest citi
 
 ## User Guide  
 ### How to Run the Program
-Step 1: Install the Required Packages
+Step 1: Install the Required Packages  
 $ pip install -r requirements.txt
