@@ -3,3 +3,4 @@ This project allows you to search for restaurants in one of the 100 largest citi
 
 ## Data Sources
 (1) The information about the 100 largest cities in the US from https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population
+(2) The information about the restaurants in a city from Yelp Fusion. (Documentation Link: https://www.yelp.com/developers/documentation/v3）
