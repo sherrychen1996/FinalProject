@@ -25,3 +25,5 @@ Step 2: Run the app.py File
 $ python app.py  
 ```  
 Step 3: Copy the Url ( http://127.0.0.1:5000/ ) and Paste it in a Browser  
+### How to Choose Presentation Options  
+You can choose the presentation options by select the different checkbox and click the *update* button in the web app, or click a link to direct you to a different page.  
