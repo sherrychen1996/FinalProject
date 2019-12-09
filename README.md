@@ -5,6 +5,9 @@ This project allows you to search for restaurants in one of the 100 largest citi
 (1) The information about the 100 largest cities in the US from https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population  
 (2) The information about the restaurants in a city from Yelp Fusion. ( Documentation Link: https://www.yelp.com/developers/documentation/v3 ) ( You also need to get a Yelp APIkey by sign up this website: https://www.yelp.com/fusion )  
 
+## Other Information
+Getting-started page of plotly: https://plot.ly/python/getting-started/
+
 ## Code Structure
 ### Significant Data Processing Functions
 (1) *get_city_info_db* Function: This function takes one parameter, *cond*, as input, which has a default value "None". When *cond* takes its default value, the function returns a list of City class instances of all 100 cities; when *cond* takes a business id, it returns a list which only contains one City class instance of the city the business is in.     
